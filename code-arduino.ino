@@ -8,13 +8,10 @@ Stepper myStepper(stepsPerRevolution, 2, 4, 3, 5);
 void setup() {
   myStepper.setSpeed(rolePerMinute);
   
-  //Serial.begin(9600);
 
 }
 
 void loop() {
-//  Serial.print("X-axis: ");
-//  Serial.println(analogRead(X_pin));
   int a = analogRead(X_pin);
   if (a > 400 && a < 520)
   {
